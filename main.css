@@ -1,3 +1,7 @@
+* {
+  border: solid steelblue 3px;
+}
+
 .container {
   display: grid;
   grid-gap: 1px;
@@ -5,28 +9,28 @@
   grid-template-rows: auto 400px 100px;
 }
 
-.header {
+header {
+  grid-column: 1 / -1;
+  background-image: url("https://placeimg.com/1000/400/nature");
+  background-size: cover;
+}
+
+main {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+footer {
   grid-column: 1 / -1;
 }
 
-.main {
-  grid-column: 1 / -1;
-}
 
-.footer {
-  grid-column: 1 / -1;
-}
 
-.container > div {
-    color: black;
-    background-color: skyblue;
-    border: solid blue 5px;
-}
-
-.nav-right {
+nav {
   float: right;
   margin-top: 2em;
-  margin-right: 3em;
+  margin-right: 1em;
+  list-style: none;
 }
 
 .menu {
@@ -39,9 +43,12 @@ a {
     font-size:2em;
     color: black;
     text-decoration: none;
- }
+}
 
-  a:hover {
+a:hover {
     border-bottom:2px solid brown;
     opacity: 1;
-  }
+}
+.contact-info {
+  float: right;
+}  
