@@ -1,5 +1,5 @@
 * {
-  border: solid steelblue 3px;
+  border: solid firebrick 1px;
 }
 
 .container {
@@ -13,6 +13,8 @@ header {
   grid-column: 1 / -1;
   background-image: url("https://placeimg.com/1000/400/nature");
   background-size: cover;
+  color: whitesmoke;
+  text-shadow: 3px 3px 2px #222;
 }
 
 main {
@@ -24,13 +26,18 @@ footer {
   grid-column: 1 / -1;
 }
 
-
-
+.profile-pic {
+  float: left;
+  height: 100px;
+  width: 100px%; 
+  border-radius: 50%;
+}
 nav {
   float: right;
   margin-top: 2em;
   margin-right: 1em;
   list-style: none;
+ 
 }
 
 .menu {
@@ -41,14 +48,22 @@ nav {
 
 a {
     font-size:2em;
-    color: black;
     text-decoration: none;
+}
+a:link {
+  color: #222;
+}
+
+a:visited {
+  color: #222;
 }
 
 a:hover {
-    border-bottom:2px solid brown;
+    border-bottom:2px solid black;
     opacity: 1;
 }
 .contact-info {
+  margin-top: 15px;
   float: right;
+  padding: 10px 10px 0px 0px; 
 }  
