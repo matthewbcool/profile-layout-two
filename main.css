@@ -1,17 +1,20 @@
 * {
-  border: solid firebrick 1px;
+  box-sizing: content-box;
 }
 
 .container {
   display: grid;
   grid-gap: 1px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto 400px 100px;
+  grid-template-rows: auto 600px 100px;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
 }
 
 header {
   grid-column: 1 / -1;
-  background-image: url("https://placeimg.com/1000/400/nature");
+  background-color: rgb(56, 84, 97);
   background-size: cover;
   color: whitesmoke;
   text-shadow: 3px 3px 2px #222;
@@ -19,18 +22,23 @@ header {
 
 main {
   grid-column: 1 / -1;
-  width: 100%;
+  background-image: url("https://placeimg.com/1000/800/tech/grayscale");
+  background-repeat: no-repeat;
 }
 
 footer {
   grid-column: 1 / -1;
+  background-color: rgb(56, 84, 97);
+  border-bottom: solid whitesmoke 3px;
 }
 
 .profile-pic {
   float: left;
   height: 100px;
-  width: 100px%; 
+  width: 100px; 
   border-radius: 50%;
+  margin-left: 20px;
+  border: solid whitesmoke 2px;
 }
 nav {
   float: right;
