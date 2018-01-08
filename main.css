@@ -3,10 +3,12 @@
 
 * {
   box-sizing: content-box;
+  
 }
 body {
   margin: 0;
 }
+
 
 .container {
   display: grid;
@@ -23,21 +25,33 @@ header {
   background-color: rgb(56, 84, 97);
   background-size: cover;
   color: whitesmoke;
+}
+
+header li {
+  color: whitesmoke;
   text-shadow: 3px 3px 2px #222;
 }
 
-main {
-  grid-column: 1 / -1;
-  background-image: url("https://placeimg.com/1000/800/tech/grayscale");
-  background-repeat: no-repeat;
+header ul {
+  padding: 0;
+  margin: 0;
 }
 
-footer {
-  grid-column: 1 / -1;
-  background-color: rgb(56, 84, 97);
-  border-bottom: solid whitesmoke 3px;
+h2 {
+  margin: 0;
+  text-shadow: 3px 3px 2px #222;
+}
+header p {
+  margin: 0;
+  display: inline;
+  text-shadow: 3px 3px 2px #222;
 }
 
+.name-div {
+ display: inline-block;
+ margin-top: 30px;
+ padding-left: 1em;
+}
 .profile-pic {
   float: left;
   height: 75px;
@@ -52,7 +66,6 @@ nav {
   margin-right: 1em;
   list-style: none;
   font-family: 'Alegreya', serif;
- 
 }
 
 .menu {
@@ -74,20 +87,104 @@ a:visited {
 }
 
 a:hover {
-    border-bottom:2px solid black;
-    opacity: 1;
+  border-bottom:2px solid black;
+  opacity: 1;
 }
+main {
+  grid-column: 1 / -1;
+  background-image: url("https://placeimg.com/1000/800/tech/grayscale");
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  grid-column: 1 / -1;
+  background-color: rgb(56, 84, 97);
+  border-bottom: solid whitesmoke 3px;
+}
+
+
+
 .contact-info {
   margin: 15px 0 15px 0;
   float: right;
   padding: 10px 10px 0px 0px; 
-}  
+}
+
+.contact-info a {
+  display: inline-block;
+}
+
+/* =================================
+  Blinking
+==================================*/
+
+
+.blinking {
+  font-weight: 100;
+  font-size: 24px;
+  display: inline;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: whitesmoke;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: whitesmoke;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: whitesmoke;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: whitesmoke;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: whitesmoke;
+  }
+}
+
+
+
 
 /* =================================
   Media Queries
 ==================================*/
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .container {
     display: grid;
     grid-gap: 1px;
@@ -97,10 +194,6 @@ a:hover {
     width: 90%;
     height: 100%;
   }
-  
-}
-
-@media (max-width: 700px) {
   nav {
     float: right;
     height: 100%;
@@ -111,7 +204,6 @@ a:hover {
     float: right;
 
   }
-  
 }
 
 @media (max-width: 500px) {
