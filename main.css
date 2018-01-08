@@ -16,6 +16,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto 600px auto;
   margin: 0 auto;
+  margin-top: 1em;
   width: 80%;
   height: 100%;
 }
