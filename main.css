@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
 
-
-* {
-  box-sizing: content-box;
-  
-}
-
 .space,
-.about,
+.about-box,
 .projects,
 .education {
   height: 500px;
@@ -112,6 +106,18 @@ main {
   background-color: lightblue;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 70px;
+}
+
+.about-box {
+  display: flex;
+  font-size: 1em;
+}
+
+.content-block {
+  border: solid white 2px;
+  max-height: 300px;
+  max-width: 300px;
 }
 
 footer {
