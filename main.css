@@ -96,7 +96,7 @@ a:visited {
   color: #222;
 }
 
-a:hover {
+li > a:hover {
   border-bottom:2px solid black;
   opacity: 1;
 }
@@ -111,13 +111,13 @@ main {
 
 .about-box {
   display: flex;
+  flex-wrap: wrap;
   font-size: 1em;
 }
 
-.content-block {
-  border: solid white 2px;
-  max-height: 300px;
-  max-width: 300px;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -138,6 +138,40 @@ footer {
 .contact-info a {
   display: inline-block;
 }
+
+/* =================================
+  Projects
+==================================*/
+
+.project-box:hover {
+  transform: scale(1.2);
+}
+
+.project-box {
+  border: solid white 2px;
+  height: 400px;
+  width: 400px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+#twitch {
+  background-image: url("https://thumbs.gfycat.com/TerrificPresentCaecilian-size_restricted.gif");
+  background-size: cover; 
+}
+
+#calc {
+  background-image: url("https://thumbs.gfycat.com/SelfassuredSingleAiredale-size_restricted.gif");
+}
+
+
+
+
+
+
+
+
+
 
 /* =================================
   Blinking
